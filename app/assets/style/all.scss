@@ -1,0 +1,12 @@
+@import "bootstrap/functions";
+@import "helper/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/bootstrap.scss";
+
+//  pages
+@import "components/header";
+@import "utils/utils";
+@import "components/banner";
+@import "components/card";
+@import "components/switch-img";
+@import "components/modal";

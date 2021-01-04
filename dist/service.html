@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    service
+  </title>
+
+
+  <link rel="stylesheet" href="./jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="dist/assets/style/all.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-white px-0 px-lg-10 fixed-top">
+    <div class="container">
+    <h1 class="logo ml-5"><a class="navbar-brand mt-1 mt-md-0" href="index.html">pet</a></h1>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler border-0"><i class="fas fa-bars text-primary fa-2x"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mb-4">
+        <li class="nav-item active border-sm-bottom border-sm-top">
+          <a class="nav-link text-info text-center h5-sm py-2 py-md-0 font-sm-bold" href="service.html">預約服務</a>
+        </li>
+        <li class="nav-item ml-0 ml-md-8">
+          <a class="nav-link text-info text-center py-2 py-md-0 h5-md border-sm-bottom font-sm-bold" href="Detail.html">成為寵物保母</a>
+        </li>
+        <li class="nav-item ml-0 ml-md-8">
+          <a class="nav-link text-info text-center py-2 py-md-0 h5-md border-sm-bottom font-sm-bold" href="login.html">登入</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  
+
+<div class="container px-lg-10  mb-md-9">
+    <div class="row d-flex align-items-center">
+        <div class="col-12 col-md-4">
+            <div class="d-none d-md-block">
+                <h2 class="h1 text-info font-weight-bold mb-1">寵物寄宿</h2>
+                <h3 class="text-info font-weight-bold">給您的毛孩最舒適的環境</h3>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 px-0 px-md-3">
+           <div class="service-banner bg-cover"></div>
+        <div class="d-md-none d-block my-1">
+            <h2 class="text-info font-weight-bold mb-1 text-center">寵物寄宿</h2>
+            <h3 class="text-info font-weight-bold text-center">給您的毛孩最舒適的環境</h3>
+        </div>
+    </div>
+    </div>
+</div>
+<section class="bg-primary pt-3 mb-9 mb-md-10">
+    <div class="container px-lg-10">
+        <div class="form-row px-0">
+            <div class="form-group col-3 col-md-2 col-lg-1">
+                <select name="pet" id="pet" class="form-control">
+                    <option value="#">貓</option>
+                </select>
+            </div>
+            <div class="form-group col-6 col-md-3 col-lg-2">
+                <select name="city" id="city" class="form-control">
+                    <option value="#">高雄市</option>
+                </select>
+            </div>
+            <div class="form-group col-6 col-md-3 col-lg-2">
+                <select name="date-start" id="date-start" class="form-control">
+                    <option value="#">2020-11-20</option>
+                </select>
+            </div>
+            <span class="pt-1 d-none d-md-block"> 至 </span>
+            <div class="form-group col-6 col-md-3 col-lg-2">
+                <select name="date-end" id="date-end" class="form-control">
+                    <option value="#">2020-11-21</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- siwper-lg md -->
+<div class="swiper-container swiper-card container d-none d-md-block mb-md-9 mb-lg10">
+    <h2 class="pl-9 text-info font-weight-bold">本月熱門寄宿</h2>
+    <div class="swiper-wrapper container">
+        <div class="swiper-slide mx-1 w-30">
+            <div class="card card-shadow swiper-sm-card">
+                <div class="card-img1 bg-cover"></div>
+                <div class="text-center">
+                    <img class="card-pic1"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-1.png"
+                        width="100" alt="">
+                </div>
+                <div class="card-body px-xl-9 px-1">
+                    <h2 class="card-title h5 text-info text-center">Jamie</h2>
+                    <p class="card-text text-info text-center">寄宿、美容、寵物訓練</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-success px-9 d-inline-block mb-5" data-toggle="modal"
+            data-target="#reserveModal">預約</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="h6 text-info mr-xl-9 mr-md-6 mr-9">獲得評價<br><span
+                                class="h4 font-weight-bold">198</span>則</h3>
+                        <h3 class="h6 text-info">已完成訂單<br><span class="h4 font-weight-bold">580</span>件</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-slide w-30 mx-1">
+            <div class="card card-shadow">
+                <div class="card-img2 bg-cover"></div>
+                <div class="text-center">
+                    <img class="card-pic1"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-2.png"
+                        width="100" alt="">
+                </div>
+                <div class="card-body px-xl-9 px-1">
+                    <h2 class="card-title h5 text-info text-center">Eric</h2>
+                    <p class="card-text text-info text-center">寄宿、美容</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-success px-9 d-inline-block mb-5" data-toggle="modal"
+            data-target="#reserveModal">預約</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="h6 text-info mr-xl-9 mr-md-6 mr-9">獲得評價<br><span
+                                class="h4 font-weight-bold">76</span>則</h3>
+                        <h3 class="h6 text-info">已完成訂單<br><span class="h4 font-weight-bold">208</span>件</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide w-30 mx-1">
+            <div class="card card-shadow">
+                <div class="card-img3 bg-cover"></div>
+                <div class="text-center">
+                    <img class="card-pic1"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-3.png"
+                        width="100" alt="">
+                </div>
+                <div class="card-body px-xl-9 px-1">
+                    <h2 class="card-title h5 text-info text-center">Yvonne</h2>
+                    <p class="card-text text-info text-center">美容、寵物行為訓練</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-success px-9 d-inline-block mb-5" data-toggle="modal"
+            data-target="#reserveModal">預約</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="h6 text-info mr-xl-9 mr-md-6 mr-9">獲得評價<br><span class="h4 font-weight-bold">52</span>則</h3>
+                        <h3 class="h6 text-info">已完成訂單<br><span class="h4 font-weight-bold">196</span>件</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev text-info"></div>
+    <div class="swiper-button-next text-info"></div>
+</div>
+<!-- swiper-lg md end -->
+
+<!-- swiper-sm -->
+<div class="container px-lg-10 mb-8 d-block d-md-none">
+    <h2 class="text-info font-weight-bold">本月熱門寄宿</h2>
+    <ul class="row pl-0">
+        <li class="col-12 col-md-4 col-lg-4 mb-2">
+            <div class="card card-shadow">
+                <div class="card-img1 bg-cover"></div>
+                <div class="text-center">
+                    <img class="card-pic1"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-1.png"
+                        width="100" alt="">
+                </div>
+                <div class="card-body px-xl-9 px-1 mb-2">
+                    <h2 class="card-title h5 text-info text-center">Jamie</h2>
+                    <p class="card-text text-info text-center">寄宿、美容、寵物訓練</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-success px-9 d-inline-block mb-5">預約</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="h6 text-info mr-xl-9 mr-md-6 mr-9">獲得評價<br><span
+                                class="h4 font-weight-bold">198</span>則</h3>
+                        <h3 class="h6 text-info">已完成訂單<br><span class="h4 font-weight-bold">580</span>件</h3>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 col-md-4 col-lg-4 mb-2">
+            <div class="card card-shadow">
+                <div class="card-img2 bg-cover"></div>
+                <div class="text-center">
+                    <img class="card-pic1"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-2.png"
+                        width="100" alt="">
+                </div>
+                <div class="card-body px-xl-9 px-1">
+                    <h2 class="card-title h5 text-info text-center">Eric</h2>
+                    <p class="card-text text-info text-center">寄宿、美容</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-success px-9 d-inline-block mb-5">預約</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="h6 text-info mr-xl-9 mr-md-6 mr-9">獲得評價<br><span
+                                class="h4 font-weight-bold">76</span>則</h3>
+                        <h3 class="h6 text-info">已完成訂單<br><span class="h4 font-weight-bold">208</span>件</h3>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 col-md-4 col-lg-4 mb-2">
+            <div class="card card-shadow">
+                <div class="card-img3 bg-cover"></div>
+                <div class="text-center">
+                    <img class="card-pic1"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/person-3.png"
+                        width="100" alt="">
+                </div>
+                <div class="card-body px-xl-9 px-1">
+                    <h2 class="card-title h5 text-info text-center">Yvonne</h2>
+                    <p class="card-text text-info text-center">美容、寵物行為訓練</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-success px-9 d-inline-block mb-5">預約</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="h6 text-info mr-xl-9 mr-md-6 mr-9">獲得評價<br><span
+                                class="h4 font-weight-bold">52</span>則</h3>
+                        <h3 class="h6 text-info">已完成訂單<br><span class="h4 font-weight-bold">196</span>件</h3>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- swiper-sm end -->
+
+<section>
+    <div class="container px-lg-10">
+        <ul class="row px-0">
+            <li class="col-6 col-md-4 col-lg-3 pr-1  pr-md-3 mb-2 mb-md-4 mb-lg-6">
+                <div class="card card-shadow border-top-lighter rounded">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body bg-lighter">
+                        <h2 class="card-title h5 text-info mb-1">寵屋烏</h2>
+                        <div class="mb-1"><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i></div>
+                        <p class="card-text h7 text-info mb-8">寄宿、美容洗澡、到府保姆</p>
+                    </div>
+                    <div class="d-flex pt-1">
+                    <a href="#" class="btn btn-white text-info h5 w-50">聯繫</a>
+                    <a href="#" class="btn btn-white text-success h5 w-50">預約</a>
+                    </div>
+                </div>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3 pl-1 pl-md-3 mb-2 mb-md-4 mb-lg-6">
+                    <div class="card card-shadow border-top-lighter rounded">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-3.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-lighter">
+                            <h2 class="card-title h5 text-info mb-1">毛孩好家</h2>
+                            <div class="mb-1"><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i></div>
+                            <p class="card-text h7 text-info mb-8">寄宿、美容洗澡、到府保姆</p>
+                        </div>
+                        <div class="d-flex pt-1">
+                            <a href="#" class="btn btn-white text-info h5 w-50">聯繫</a>
+                            <a href="#" class="btn btn-white text-success h5 w-50">預約</a>
+                        </div>
+                    </div>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3 pr-1  pr-md-3 mb-2 mb-md-4 mb-lg-6">
+                    <div class="card card-shadow border-top-lighter rounded h-100">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-4.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-lighter">
+                            <h2 class="card-title h5 text-info mb-1">妖貓X僕SS</h2>
+                            <div class="mb-1"><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i></div>
+                            <p class="card-text h7 text-info mb-8">寄宿、美容洗澡</p>
+                        </div>
+                        <div class="d-flex pt-1">
+                            <a href="#" class="btn btn-white text-info h5 w-50">聯繫</a>
+                            <a href="#" class="btn btn-white text-success h5 w-50">預約</a>
+                        </div>
+                    </div>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3 pl-1  pl-md-3 mb-2 mb-md-4 mb-lg-6">
+                    <div class="card card-shadow border-top-lighter rounded h-100">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-5.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-lighter">
+                            <h2 class="card-title h5 text-info mb-1">貓是主我是僕</h2>
+                            <div class="mb-1"><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i></div>
+                            <p class="card-text h7 text-info mb-8">寄宿、美容洗澡、到府保姆</p>
+                        </div>
+                        <div class="d-flex pt-1">
+                            <a href="#" class="btn btn-white text-info h5 w-50">聯繫</a>
+                            <a href="#" class="btn btn-white text-success h5 w-50">預約</a>
+                        </div>
+                    </div>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3 pr-1  pr-md-3 mb-2 mb-md-4 mb-lg-6">
+                <div class="card card-shadow border-top-lighter rounded">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-6.jpeg"
+                    class="card-img-top" alt="...">
+                <div class="card-body bg-lighter">
+                    <h2 class="card-title h5 text-info mb-1">汪汪對</h2>
+                    <div class="mb-1"><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                            class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                            class="fas fa-star text-primary"></i></div>
+                    <p class="card-text h7 text-info mb-8">寄宿、寵物行為訓練、到府保姆</p>
+                </div>
+                <div class="d-flex pt-1">
+                    <a href="#" class="btn btn-white text-info h5 w-50">聯繫</a>
+                    <a href="#" class="btn btn-white text-success h5 w-50">預約</a>
+                </div>
+            </div></li>
+            <li class="col-6 col-md-4 col-lg-3 pl-1  pl-md-3 mb-2 mb-md-4 mb-lg-6">
+                    <div class="card card-shadow border-top-lighter rounded h-100">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-7.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-lighter">
+                            <h2 class="card-title h5 text-info mb-1">卯咪</h2>
+                            <div class="mb-1"><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i></div>
+                            <p class="card-text h7 text-info mb-8">寄宿、寵物行為訓練</p>
+                        </div>
+                        <div class="d-flex pt-1">
+                            <a href="#" class="btn btn-white text-info h5 w-50">聯繫</a>
+                            <a href="#" class="btn btn-white text-success h5 w-50">預約</a>
+                        </div>
+                    </div>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3 pr-1  pr-md-3 mb-2 mb-md-4 mb-lg-6">
+                    <div class="card card-shadow border-top-lighter rounded h-100">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-8.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-lighter">
+                            <h2 class="card-title h5 text-info mb-1">貓狗大戰</h2>
+                            <div class="mb-1"><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i></div>
+                            <p class="card-text h7 text-info mb-8">寄宿、美容洗澡、到府保姆</p>
+                        </div>
+                        <div class="d-flex pt-1">
+                            <a href="#" class="btn btn-white text-info h5 w-50">聯繫</a>
+                            <a href="#" class="btn btn-white text-success h5 w-50">預約</a>
+                        </div>
+                    </div>
+            </li>
+            <li class="col-6 col-md-4 col-lg-3 pl-1  pl-md-3 mb-2 mb-md-4 mb-lg-6">
+                    <div class="card card-shadow border-top-lighter rounded h-100">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-2.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body bg-lighter">
+                            <h2 class="card-title h5 text-info mb-1">萌寵底家</h2>
+                            <div class="mb-1"><i class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i><i class="fas fa-star text-primary"></i><i
+                                    class="fas fa-star text-primary"></i></div>
+                            <p class="card-text h7 text-info mb-8">寄宿、到府保姆</p>
+                        </div>
+                        <div class="d-flex pt-1">
+                            <a href="#" class="btn btn-white text-info h5 w-50">聯繫</a>
+                            <a href="#" class="btn btn-white text-success h5 w-50">預約</a>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+    <section>
+      <div class="bg-primary py-7 mb-md-9">
+        <div class="container px-lg-10">
+          <div>
+            <h2 class="h1-sm text-info font-weight-bold">有任何我們能幫助您的嗎 ?</h2>
+            <p class="text-info font-weight-bold mb-8">輸入電子信箱 <br> 將有專業人員在線幫您解決所有問題</p>
+            <div class="d-flex">
+              <input type="help-email" id="help-email" placeholder="reserve2@gmail.com"
+                class="form-control col-7 col-md-4 col-lg-3">
+              <a href="#" class="btn btn-success col-5 col-md-3 col-lg-1">送出</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="container footer px-lg-10 mb-2">
+        <ul class="row px-0">
+          <li class="col-12 col-md-3 d-none d-md-block">
+            <ul class="px-0">
+              <li class="mb-5">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/logo.svg"
+                  width="120">
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="Detail.html" class="text-info">關於我們</a></h3>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">幫助中心</a></h3>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">使用條款</a></h3>
+              </li>
+              <li class="mb-md-10">
+                <h3 class="h6"><a href="#" class="text-info">隱私政策</a></h3>
+              </li>
+            </ul>
+          </li>
+          <li class="col-12 col-md-3 d-none d-md-block">
+            <ul class="px-0">
+              <li class="mb-8 mt-2">
+                <h2 class="h5 font-weight-bold"><a href="service.html" class="text-info">寵物服務</a></h2>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">幫助中心</a></h3>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">使用條款</a></h3>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">隱私政策</a></h3>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">使用條款</a></h3>
+              </li>
+            </ul>
+          </li>
+          <li class="col-12 col-md-3 d-none d-md-block">
+            <ul class="px-0">
+              <li class="mb-8 mt-2">
+                <h2 class="h5 font-weight-bold"><a href="login.html" class="text-info">加入我們</a></h2>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">成為寵物保母</a></h3>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">加入寵物計程車</a></h3>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">專屬APP下載</a></h3>
+              </li>
+              <li class="mb-5">
+                <h3 class="h6"><a href="#" class="text-info">相關合約條款</a></h3>
+              </li>
+            </ul>
+          </li>
+          </li>
+          <li class="col-12 col-md-3 d-none d-md-block">
+            <ul class="px-0">
+              <li class="mb-7 mt-2">
+                <h2 class="h5 font-weight-bold"><a href="#" class="text-info">聯繫我們</a></h2>
+              </li>
+              <li>
+                <h3 class="h6"><a href="#" class="text-info">petpet@petmail.com</a></h3>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-md-between flex-column flex-md-row">
+          <h3 class="h6 d-none d-md-block"><a href="#" type="tel" class="text-info"><i class="fas fa-phone-alt"></i>
+              07-123-4567</a></h3>
+          <img class="d-md-none d-block"
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/logo.svg"
+            width="120">
+          <h3 class="h6 text-info">Copyright © 2020 PetPet. All rights reserved.</h3>
+        </div>
+      </div>
+    </footer>
+      </section>
+
+    <!-- Modal-reserve1 -->
+    <div class="modal fade" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="reserveModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered reserveModal" role="document">
+        <div class="modal-content  p-1 p-md-3 p-lg-6">
+          <div class="modal-body">
+
+            <!-- time-line-->
+            <div class="mb-md-7 mb-lg-0 d-block d-md-none">
+              <div class="row timeline-section">
+                <div class="col-4">
+                  <div class="timeline-pointer">
+                    <h3 class="mt-1 h6 active">預約項目</h3>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="timeline-pointer">
+                    <h3 class="mt-1 h6">預約資料</h3>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="timeline-pointer">
+                    <h3 class="mt-1 h6">付款資訊</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- time-line-end -->
+
+            <div class="row align-items-center d-lg-none">
+              <div class="col-5 pr-0 pr-md-3">
+
+                <h2 class="h4 text-info font-weight-bold mb-1 mb-md-6 d-lg-none d-block">預約項目</h2>
+                <div class="modal-img bg-cover mb-5 mb-md-3"></div>
+              </div>
+              <div class="col-7">
+                <h5 class="text-info font-weight-bold d-md-inline-block mb-0 mb-md-1 mt-5">毛孩好家</h5>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <h3 class="h6 text-info"><i class="fas fa-map-marker-alt pt-1 pt-md-0 fa-lg mr-1"></i></i>高雄市苓雅區、新興區、前鎮區
+                </h3>
+              </div>
+            </div>
+
+            <ul class="row px-0 mb-md-6 md-lg-0">
+              <li class="col-md-12 col-lg-8">
+                <div>
+                  <h2 class="h4 text-info font-weight-bold mb-md-6 d-none d-lg-block">預約項目</h2>
+                  <ul class="row px-0 no-sm-gutter mb-5 mb-md-6 mb-lg-0">
+                    <li class="col-3 pr-1 pr-lg-0">
+                      <a href="#"
+                        class="d-flex flex-column a-tdn modal-hover rounded card-shadow py-2 py-md-6 justify-content-center align-items-center border">
+                        <i class="fas fa-home fa-2x mb-1 modal-icon"></i>
+                        <h3 class="h5 text-info">寄宿</h3>
+                      </a>
+                    </li>
+                    <li class="col-3 pr-1 pr-lg-0">
+                      <a href="#"
+                        class="d-flex flex-column a-tdn modal-hover rounded card-shadow py-2 py-md-6 justify-content-center align-items-center border">
+                        <i class="fas fa-hands-wash fa-2x mb-1"></i>
+                        <h3 class="h5 text-info">美容</h3>
+                      </a>
+                    </li>
+                    <li class="col-3 pr-1 pr-lg-0">
+                      <a href="#"
+                        class="d-flex flex-column a-tdn modal-hover rounded card-shadow py-2 py-md-6 justify-content-center align-items-center border">
+                        <i class="fas fa-taxi fa-2x mb-1"></i>
+                        <h3 class="h5 text-info">到府服務</h3>
+                      </a>
+                    </li>
+                    <li class="col-3 pr-1 pr-lg-0">
+                      <a href="#"
+                        class="d-flex flex-column a-tdn modal-hover rounded card-shadow py-2 py-md-6 justify-content-center align-items-center border">
+                        <i class="fas fa-walking fa-2x mb-1"></i>
+                        <h3 class="h5 text-info">遛狗保姆</h3>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mb-4">
+                    <div>
+                      <label for="from" class="d-block mt-md-6">選擇日期</label>
+                      <div class="form-inline">
+                        <input type="text" id="from" name="from" class="modal-input border rounded py-1 mb-1 mb-md-0">
+                        <label for="to" class="mx-1">至</label>
+                        <input type="text" id="to" name="to" class="modal-input border rounded py-1">
+                        <span class="ml-1 d-inline-block">共一晚</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-4 col-md-2 col-xl-2  mb-md-8">
+                      <label for="amount">毛孩數量</label>
+                      <select name="amount" id="amount" class="form-control">
+                        <option value="#">1隻</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-4 col-md-3 col-xl-3">
+                      <label for="species" class="ml-0 ml-md-3">您的毛孩是</label>
+                      <select name="species" id="species" class="form-control ml-0 ml-md-3">
+                        <option value="#">貓</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-4 col-md-3 col-xl-3">
+                      <label for="petage" class="ml-0 ml-md-7">年齡</label>
+                      <select name="petage" id="petname" class="form-control ml-0 ml-md-7">
+                        <option value="#">一歲</option>
+                      </select>
+                    </div>
+                    <div class="container mb-md-7 mb-lg-0  d-none d-md-block">
+                      <div class="row timeline-section">
+                        <div class="col">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6 active">預約項目</h3>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6">預約資料</h3>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6">付款資訊</h3>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="text-right mt-7 d-lg-none d-block">
+                        <a href="#" data-toggle="modal" data-target="#reserve2Modal"
+                          class="btn btn-success w-40 step-btn1 py-2">下一步</a>
+                      </div>
+                    </div>
+              </li>
+              <div class="mt-7 d-block d-md-none px-3 w-100 text-center">
+                <a href="#" class="text-success d-block a-tdn mb-3">返回</a>
+                <a href="#" data-toggle="modal" data-target="#reserve2Modal"
+                  class="btn btn-success d-block step-btn1 py-2">下一步</a>
+              </div>
+
+              <li class="col-md-4 col-4-lg d-none d-lg-block">
+                <h2 class="h4 text-info font-weight-bold mb-6 d-lg-none d-block">預約項目</h2>
+                <div class="modal-img bg-cover mb-1"></div>
+                <div>
+                  <h5 class="text-info font-weight-bold d-inline-block mb-1">毛孩好家</h5>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                </div>
+                <div>
+                  <h3 class="h6 text-info"><i class="fas fa-map-marker-alt fa-lg mr-1 mb-10"></i></i>高雄市苓雅區、新興區、前鎮區</h3>
+                  <a href="#" class="btn btn-success d-block step-btn1 py-2" data-toggle="modal"
+                    data-target="#reserve2Modal">下一步</a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+    </div>
+<!-- Modal-reserve1-end -->
+
+
+    <!-- Modal-reserve-2 -->
+
+    <div class="modal fade" id="reserve2Modal" tabindex="-1" role="dialog" aria-labelledby="reserve2ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered reserve2Modal" role="document">
+        <div class="modal-content  p-1 p-md-3 p-lg-6">
+          <div class="modal-body">
+
+            <!-- time-line-->
+            <div class="mb-md-7 mb-lg-0 d-block d-md-none">
+              <div class="row timeline-section">
+                <div class="col-4">
+                  <div class="timeline-pointer">
+                    <h3 class="mt-1 h6 active">預約項目</h3>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="timeline-pointer">
+                    <h3 class="mt-1 h6">預約資料</h3>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="timeline-pointer">
+                    <h3 class="mt-1 h6">付款資訊</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- time-line-end-->
+
+            <div class="row align-items-center d-lg-none">
+              <div class="col-5 pr-0 pr-md-3">
+
+                <h2 class="h4 text-info font-weight-bold mb-1 mb-md-6 d-lg-none d-block">預約資料</h2>
+                <div class="modal-img bg-cover mb-5 mb-md-3"></div>
+              </div>
+              <div class="col-7">
+                <h5 class="text-info font-weight-bold d-md-inline-block mb-0 mb-md-1 mt-5">毛孩好家</h5>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <i class="fas fa-star text-primary fa-md"></i>
+                <h3 class="h6 text-info"><i class="fas fa-map-marker-alt pt-1 pt-md-0 fa-lg mr-1"></i></i>高雄市苓雅區、新興區、前鎮區
+                </h3>
+              </div>
+            </div>
+
+            <ul class="row mb-md-6 md-lg-0 pl-0">
+              <li class="col-12 col-lg-8">
+                <div>
+                  <h2 class="h4 text-info font-weight-bold mb-md-6 d-none d-lg-block">預約項目</h2>
+                  <ul class="row px-0 no-sm-gutter mb-md-6 mb-lg-0 justify-content-between">
+
+
+                    <li class="form-group col-md-8 col-lg-8">
+                      <label for="petname">毛孩姓名</label>
+                      <input type="petname" name="petname" id="petname" class="form-control mb-4" placeholder="請輸入毛孩姓名">
+
+                      <label for="ownername">飼主姓名</label>
+                      <input type="ownername" name="petname" id="ownername" class="form-control mb-4"
+                        placeholder="請輸入毛孩姓名">
+
+                      <label for="modal-mail">Email</label>
+                      <input type="modal-mail" name="modal-mail" id="modal-mail" class="form-control mb-4"
+                        placeholder="example@gmail.com">
+
+                      <label for="modal-tel">連絡電話</label>
+                      <input type="modal-tel" name="modal-tel" id="modal-tel" class="form-control mb-md-3"
+                        placeholder="0912-345-678">
+
+                    </li>
+
+
+                  </ul>
+                    <div class="container mb-md-7 mb-lg-0  d-none d-md-block">
+                      <div class="row timeline-section">
+                        <div class="col-4">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6">預約項目</h3>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6 active">預約資料</h3>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6">付款資訊</h3>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="text-right d-lg-none d-block mt-md-7 d-flex justify-content-end align-items-center">
+                        <a href="#" class="text-success d-block a-tdn mr-5">返回</a>
+                      <a href="#" data-toggle="modal" data-target="#reserve3Modal" class="btn btn-success btn-lg w-40 step-btn py-2">下一步</a>
+                      </div>
+                    </div>
+              </li>
+              <div class="mt-7 d-block d-md-none px-3 w-100 text-center">
+                <a href="#" class="text-success d-block a-tdn mb-3">返回</a>
+                <a href="#" data-toggle="modal" data-target="#reserve3Modal"
+                  class="btn btn-success d-block step-btn2 py-2">下一步</a>
+              </div>
+
+              <li class="col-md-4 col-4-lg d-none d-lg-block ml-auto">
+                <h2 class="h4 text-info font-weight-bold mb-6 d-lg-none d-block">預約項目</h2>
+                <div class="modal-img bg-cover mb-1"></div>
+                <div>
+                  <h5 class="text-info font-weight-bold d-inline-block mb-1">毛孩好家</h5>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                </div>
+                <div>
+                  <h3 class="h6 text-info">
+                    <i class="fas fa-map-marker-alt fa-lg mr-1 mb-9"></i></i>高雄市苓雅區、新興區、前鎮區</h3>
+                    <a href="#" class="text-success d-block a-tdn mb-3 text-center">返回</a>
+                  <a href="#" class="btn btn-success d-block step-btn2 py-2" data-toggle="modal"
+                    data-target="#reserve3Modal">下一步</a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+    </div>
+    <!-- modal-reserve-2-end -->
+
+    <!-- modal-reserve-3-->
+
+      <div class="modal fade" id="reserve3Modal" tabindex="-1" role="dialog" aria-labelledby="reserve3ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered reserve3Modal" role="document">
+          <div class="modal-content  p-1 p-md-3 p-lg-6">
+            <div class="modal-body">
+      
+              <!-- time-line-->
+              <div class="mb-md-7 mb-lg-0 d-block d-md-none">
+                <div class="row timeline-section">
+                  <div class="col-4">
+                    <div class="timeline-pointer">
+                      <h3 class="mt-1 h6">預約項目</h3>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="timeline-pointer">
+                      <h3 class="mt-1 h6">預約資料</h3>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="timeline-pointer">
+                      <h3 class="mt-1 h6 active">付款資訊</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- time-line-end-->
+      
+              <div class="row align-items-center d-lg-none">
+                <div class="col-5 pr-0 pr-md-3">
+      
+                  <h2 class="h4 text-info font-weight-bold mb-1 mb-md-6 d-lg-none d-block">付款資訊</h2>
+                  <div class="modal-img bg-cover mb-5 mb-md-3 d-md-none d-block"></div>
+                </div>
+                <div class="col-7 d-md-none d-block">
+                  <h5 class="text-info font-weight-bold d-md-inline-block mb-0 mb-md-1 mt-5">毛孩好家</h5>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <i class="fas fa-star text-primary fa-md"></i>
+                  <h3 class="h6 text-info"><i class="fas fa-map-marker-alt pt-1 pt-md-0 fa-lg mr-1"></i></i>高雄市苓雅區、新興區、前鎮區
+                  </h3>
+                </div>
+              </div>
+      
+              <ul class="row mb-md-6 md-lg-0 pl-0">
+                <li class="col-12 col-lg-8">
+                  <div>
+                    <h2 class="h4 text-info font-weight-bold mb-md-6 d-none d-lg-block">預約項目</h2>
+                    <ul class="row px-0 no-sm-gutter mb-md-6 mb-lg-0 justify-content-between">
+      
+      
+                      <li class="form-group col-md-8 col-lg-8 mb-11">
+                        <label for="credit-id">信用卡帳號</label>
+                        <input type="text" name="credit-id" id="credit-id" class="form-control mb-4" placeholder="Xxxx-xxxx-xxxx-xxxx">
+      
+                          <label for="EXP">有效日期</label>
+                          <input type="text" name="EXP" id="EXP" class="form-control mb-4" placeholder="(MM/YY)">
+      
+                        <label for="sy-code">安全碼</label>
+                        <input type="password" name="sy-code" id="sy-code" class="form-control mb-4"
+                          placeholder="***">
+      
+                      </li>
+      
+      
+                    </ul>
+                    <div class="container mb-md-7 mb-lg-0  d-none d-md-block">
+                      <div class="row timeline-section">
+                        <div class="col-4">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6">預約項目</h3>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6">預約資料</h3>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="timeline-pointer">
+                            <h3 class="mt-1 h6 active">付款資訊</h3>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="text-right d-lg-none d-block mt-md-7 d-flex justify-content-end align-items-center">
+                        <a href="#" class="text-success d-block a-tdn mr-5">返回</a>
+                        <a href="#" data-toggle="modal" data-target="#successModal"
+                          class="btn btn-success btn-lg w-40 step-btn3 py-2">下一步</a>
+                      </div>
+                    </div>
+                </li>
+                <div class="mt-7 d-block d-md-none px-3 w-100 text-center">
+                  <a href="#" class="text-success d-block a-tdn mb-3">返回</a>
+                  <a href="#" data-toggle="modal" data-target="#successModal"
+                    class="btn btn-success d-block step-btn3 py-2">下一步</a>
+                </div>
+      
+                <li class="col-md-4 col-4-lg d-none d-lg-block ml-auto">
+                  <h2 class="h4 text-info font-weight-bold mb-6 d-lg-none d-block">付款資訊</h2>
+                  <div class="modal-img bg-cover mb-1"></div>
+                  <div>
+                    <h5 class="text-info font-weight-bold d-inline-block mb-1">毛孩好家</h5>
+                    <i class="fas fa-star text-primary fa-md"></i>
+                    <i class="fas fa-star text-primary fa-md"></i>
+                    <i class="fas fa-star text-primary fa-md"></i>
+                    <i class="fas fa-star text-primary fa-md"></i>
+                    <i class="fas fa-star text-primary fa-md"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 text-info">
+                      <i class="fas fa-map-marker-alt fa-lg mr-1 mb-9"></i></i>高雄市苓雅區、新興區、前鎮區
+                    </h3>
+                    <a href="#" class="text-success d-block a-tdn mb-3 text-center">返回</a>
+                    <a href="#" class="btn btn-success d-block py-2 step-btn3" data-toggle="modal"
+                      data-target="#successModal">下一步</a>
+                  </div>
+                </li>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>
+<!-- modal-reserve-3-end -->
+
+
+<!-- success-Modal -->
+
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered successModal" role="document">
+    <div class="modal-content reserve-success">
+      <div class="modal-body">
+        <ul class="px-0">
+          <li class="d-flex flex-column justify-content-center align-items-center">
+            <i class="fas fa-paw fa-4x text-primary mb-4"></i>
+            <h2 class="h4 font-weight-bold text-info mb-2">預約成功</h2>
+            <p class="mb-8 text-info">您可以在會員頁找到您的預約資料並修改或取消預約。</p>
+            <a href="member.html" class="btn btn-lg btn-success px-10 px-sm-11">前往會員頁</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- success-modal-end -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <script src="./assets/js/all.js"></script>
+
+</body>
+
+</html>

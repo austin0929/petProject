@@ -1,0 +1,59 @@
+.modal-img{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-3.jpeg);
+    min-height: 282px;
+}
+.modal-hover:hover{
+    border: 3px solid red !important;
+}
+.modal-input{
+    width: 43.5%;
+}
+.timeline-section {
+	position: relative;
+  display: flex;
+}
+
+.timeline-section::after {
+	content:"";
+	position: absolute;
+	left: 0;    
+	right: 0;
+	height: 3px; 
+	background-color: #D54100;
+}
+
+.timeline-pointer{
+	position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-pointer::before {
+	content:"";
+	position: absolute;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	transform: translate(50%,-25%);
+	background-color: #D54100;
+}
+@media (max-width: 992px){
+    .modal-img{
+        min-height: 150px;
+    }
+    .modal-input{
+        width: 43%;
+    }
+}
+@media (max-width: 767px){
+    .modal-input{
+        width: 80%;
+	}
+	 .modal-img{
+        min-height: 100px;
+    }
+} 
+.reserve-success{
+	padding: 170px 0;
+}

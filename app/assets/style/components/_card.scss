@@ -1,0 +1,75 @@
+.card-img1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-2.jpeg);
+    min-height: 120px;
+}
+.card-img2{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-3.jpeg);
+    min-height: 120px;
+    background-position: 30% 30%;
+}
+.card-img3{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-4.jpeg);
+    min-height: 120px;
+}
+.card-img4{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-5.jpeg);
+}
+.card-img5{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-6.jpeg);
+}
+.card-img6{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-7.jpeg);
+        height: 166px;
+}
+.card-img7{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-8.jpeg);
+       height: 166px;
+}
+.card-img8{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-3.jpeg);
+}
+.card-pic1{
+    margin-top: -50px;
+}
+.card-pic{
+    height: 120px;
+}
+.card-img-cover{
+    background-color: #000000;
+    opacity: 0.6;
+    width: 100%;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img-cover:hover{
+    opacity: 0.3;
+    transition: 0.7s;
+}
+.card a{
+    text-decoration: none;
+}
+.card-img-sm{
+    height: 166px;
+}
+@media (max-width:767px){
+    .card-img4,.card-img5,.card-img8{
+        height: 132px;
+    }
+    .card-img7,.card-img6{
+        height: 132px;
+    }
+    .card-img-cover{
+        height: 132px;
+    }
+    .card-img-sm{
+        height: 132px;
+    }
+}
+.card-img-top{
+   width: 100%;
+   height: 100%;
+   max-height: 128px;
+   min-height: 128px;
+}

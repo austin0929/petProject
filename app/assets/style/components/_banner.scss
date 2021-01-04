@@ -1,0 +1,22 @@
+.banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-1.png);
+    min-height: 736px;
+}
+@media (max-width: 992px){
+    .banner{
+    min-height: 288px;
+}
+}
+@media (max-width: 576px){
+     .banner{
+    min-height: 352px;
+}
+}
+.banner2{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-9.jpeg);
+    min-height: 584px;
+}
+.service-banner{
+    min-height: 315px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/homestay-1.png);
+}
