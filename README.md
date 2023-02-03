@@ -1,3 +1,3 @@
 #寵物網站切版練習
 
-#登入網址 <a href="https://github.com/austin0929/petProject/dist/index.html">https://github.com/austin0929/petProject/dist/index.html<a/>
+#demo網址 <a href="https://austin0929.github.io/petProject/dist/index.html">https://austin0929.github.io/petProject/dist/index.html<a/>
